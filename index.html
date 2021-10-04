@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex" />
+    <meta name="googlebot" content="noindex" />
+    <meta name="googlebot-news" content="noindex" />
+    <meta name="googlebot" content="noindex">
+    <meta name="googlebot-news" content="nosnippet">
+    <meta name="robots" content="max-snippet:0">
+    <meta name="robots" content="max-snippet:20">
+    <meta name="robots" content="max-snippet:-1">
+    <meta name="robots" content="max-image-preview:standard">
+    <meta name="robots" content="max-image-preview:standard">
+    <meta name="robots" content="unavailable_after: 2020-09-21">
+    <meta name="robots" content="nofollow">
+    <meta name="googlebot" content="noindex">
+    <link rel="icon" href="image/logo.png" type="imege/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!--  <script src="script.js"></script>-->
+    <title>Web Site Motosikl</title>
+</head>
+
+<body>
+    <section class="main">
+        <header>
+            <a href="#"> <img src="image/logo.png" class="logo"></a>
+            <ul class="navigator">
+                <li><a href="https://www.bmw-motorrad.ru/ru/home.html#/filter-vse">Uy</a></li>
+                <li><a href="https://www.shutterstock.com/ru/search/bmw+motorrad">Rasmlar</a></li>
+                <li><a href="https://www.bmw-motorrad.ru/ru/models/modeloverview.html">Market</a></li>
+                <li><a href="https://www.bmw-motorrad.ru/ru/models/heritage/r18-b.html">Malumot</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <h2>Ready To <span> Race </span></h2>
+            <a href="#" class="btn">Ride Now</a>
+            <img src="image/bike.png" class="bike">
+        </div>
+
+        <!--silider start-->
+        <div class="slider">
+            <div class="slides active">
+                <h2><span> BMW R 1200 RT </span><br> 1 170 см3</h2>
+                <h2><span> BMW S1000RR</span> <br> 999 см3</h2>
+            </div>
+            <div class="slides">
+                <h2><span>BMW 1200GS </span><br> 1 170 см3</h2>
+                <h2><span>bmw-g-310-g </span><br> 143 км/ч</h2>
+            </div>
+            <div class="slides">
+                <h2><span> BMW C400 GT. </span> <br> 139 км/ч </h2>
+                <h2><span> BMW R1250GS </span> <br> 100 км4,75</h2>
+            </div>
+        </div>
+        <!--silider end-->
+
+
+
+
+        <div class="footer" style="
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		padding: 30px 100px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;">
+            <ul class="sci">
+                <li>
+                    <a href="https://t.me/hackX391/">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/Beka10497043">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/beka_391/">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+            <div class="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        const slides = document.querySelectorAll('.slides');
+        const dots = document.querySelectorAll('.dot');
+
+        function setActive(i) {
+
+
+            for (slide of slides)
+                slide.classList.remove('active');
+            slides[i].classList.add('active');
+
+
+            for (dot of dots)
+                dot.classList.remove('active');
+            dots[i].classList.add('active');
+        }
+
+        for (let j = 0; j < dots.length; j++) {
+            dots[j].addEventListener('click', function () {
+                setActive(j)
+            })
+        }
+    </script>
+</body>
+
+</html>
